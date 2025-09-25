@@ -9,7 +9,8 @@
   },
   "author": "Mando Group <support@mandogroup.com>",
   "contributors": [
-    "Abhijeet Chadha <abhijeet.chadha@mandogroup.com>"
+    "Abhijeet Chadha <abhijeet.chadha@mandogroup.com>",
+    "Ben Laley <ben.laley@mandogroup.com>"
   ],
   "dependencies": {
     "react": "^18.3.1",
