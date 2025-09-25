@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "strict": true,
+    "esModuleInterop": true,
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "module": "es2022",
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "jsx": "react-jsx",
+
+    "baseUrl": "./",
+    "paths": {
+      "@root/*": ["src/*"],
+      "@components/*": ["src/components/*"],
+      "@utils/*": ["src/utils/*"]
+    },
+    "types": ["vitest", "vite/client"]
+  },
+  "include": ["src","src/**/*"],
+  "exclude": ["node_modules", "dist", "src/**/**.stories.ts"]
+}
