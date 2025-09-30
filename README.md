@@ -15,6 +15,13 @@ Inside the `designs` folder, there is a full-page design split across 5 differen
 - Stretch:
   - Any other component (Feel free to pick whichever)
 
+#### Breakpoints
+- XS: 320px
+- SM: 600px
+- MD: 1024px
+- LG: 1336px
+- XL: 1600px
+
 ### The Tech Stack
 
 - React 18
