@@ -1,0 +1,24 @@
+.page-title {
+    display: flex;
+    flex-direction: column;
+    
+    &__image {
+        order: 1;
+        object-fit: cover;
+        height: 300px;
+        width: auto
+    }
+    
+    &__header {
+        order: 2;
+        padding: 1.5rem;
+    }
+    // h1 {
+    //     order: 2
+    // }
+
+    // p {
+    //     order: 3
+    // }
+    
+}
