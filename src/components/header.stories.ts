@@ -1,12 +1,18 @@
 import { Meta, StoryObj } from '@storybook/react'
-import Header from './header'
+import Header, { MenuItem } from './header'
+
+export const menuItems: MenuItem[] = [
+  { label: 'About us', url: '/about-us' },
+  { label: 'Contact us', url: '/contact-us' }
+]
 
 const meta: Meta<typeof Header> = {
   title: 'Components/Header',
   component: Header,
   tags: ['autodocs'],
-  argTypes: {
-    // ToDo: Add argTypes
+  args: {
+    siteHeader: 'Mando Group',
+    menuItems: menuItems
   }
 }
 

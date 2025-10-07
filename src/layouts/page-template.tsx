@@ -1,12 +1,13 @@
 import Header from '@components/header'
 import PageTitle from '@root/components/PageTitle'
-import { pageTitleData } from '@root/lib/data'
+import { h1, description, image } from '@components/PageTitle.stories'
+import { menuItems } from '@components/header.stories'
 
 function PageTemplate() {
   return (
     <>
-      <Header />
-      <PageTitle {...pageTitleData} />
+      <Header menuItems={menuItems} siteHeader="Mando Group" />
+      <PageTitle h1={h1} description={description} image={image} />
     </>
   )
 }

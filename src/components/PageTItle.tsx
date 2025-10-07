@@ -3,11 +3,10 @@
 export type PageTitleProps = {
   h1: string
   description: string
-  image: string
-  imageAlt: string
+  image: { src: string; alt: string }
 }
 
-export default function PageTitle({ h1, description, image, imageAlt }: PageTitleProps) {
+export default function PageTitle({ h1, description, image }: PageTitleProps) {
   const width = 1298
 
   return (
@@ -16,7 +15,7 @@ export default function PageTitle({ h1, description, image, imageAlt }: PageTitl
         <h1>{h1}</h1>
         <p>{description}</p>
       </div>
-      <img className="page-title__image" src={image} alt={imageAlt} width={width} />
+      <img className="page-title__image" src={image.src} alt={image.alt} width={width} />
     </section>
   )
 }

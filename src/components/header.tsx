@@ -1,19 +1,23 @@
-const menuItems: MenuItem[] = [
-  { label: 'About Us', url: '/about-us' },
-  { label: 'Contact Us', url: '/contact-us' }
-]
-type MenuItem = { label: string; url: string }
+export type MenuItem = { label: string; url: string }
 
-type HeaderProps = {
+export type HeaderProps = {
+  siteHeader: string
   menuItems: MenuItem[]
 }
 
-function Header({}: ) {
+function Header({ siteHeader, menuItems }: HeaderProps) {
   return (
     <header className="header">
       <nav>
-        <h1>Site Header</h1>
-        <ul></ul>
+        <h1>{siteHeader}</h1>
+
+        <ul>
+          {menuItems.map((item) => (
+            <li>
+              <a href={item.url}>{item.label}</a>
+            </li>
+          ))}
+        </ul>
       </nav>
     </header>
   )
