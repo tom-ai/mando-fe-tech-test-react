@@ -16,7 +16,7 @@ Given more time I would:
  
 Overall had fun, I hope you can see from CSS I have included ordering of the image. I thought this is important so that we can maintain good semantic structure with the H1 and description coming before the image (but allow the image to be ahead of the visually)
 
-* Also if it helps others, I had to increase the buffer size to be able to upload this repo to my GitHUb. I think it's quite large with the images (I followed https://dev.to/lynerlwl/how-to-solve-git-error-rpc-failed-http-400-curl-22-the-requested-url-returned-error-400-5mf) *
+* Also if it helps others, I had to increase the buffer size to be able to upload this repo to my GitHub. I think it's quite large with the images - https://dev.to/lynerlwl/how-to-solve-git-error-rpc-failed-http-400-curl-22-the-requested-url-returned-error-400-5mf) *
 
 ## Overview
 
