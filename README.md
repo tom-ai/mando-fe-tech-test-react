@@ -1,4 +1,21 @@
 # Frontend Page Design – Technical Test
+
+## Tom's Notes
+
+Images: Just grabbed filesd from Unsplash. In the real world we would make sure they're PNG and optimised, etc!
+
+Time: Grr, should be more familiar with Storybook. Ran into some issues in
+where to keep data. I have used named exports in both story files but that conflicts with how Storybook renders out the stories.
+
+Given more time I would:
+
+ - Ensure the styling is done fully with breakpoints etc (of course)
+ - Use custom Hooks to get the data instead of hardcoding into the stories
+ - Complete every single part of the design... (:
+ - Ensure better commit history. I am under pressure here!!
+ 
+Overall had fun, I hope you can see from CSS I have included ordering of the image. I thought this is important so that we can maintain good semantic structure with the H1 and description coming before the image (but allow the image to be ahead of the visually)
+
 ## Overview
 
 This test is designed to evaluate your ability to implement a frontend page design based on provided specifications. You’ll be assessed on your attention to detail, code structure, and how closely your implementation matches the design.
@@ -9,6 +26,7 @@ Inside the `designs` folder, there is a full-page design split across 5 differen
 ![Landing Page.png](designs/Landing%20Page.png)
 
 #### Deliverables:
+
 - Required:
   - `Header` and `Page Title` components.
   - Must compile
@@ -16,6 +34,7 @@ Inside the `designs` folder, there is a full-page design split across 5 differen
   - Any other component (Feel free to pick whichever)
 
 #### Breakpoints
+
 - XS: 320px
 - SM: 600px
 - MD: 1024px
@@ -23,11 +42,14 @@ Inside the `designs` folder, there is a full-page design split across 5 differen
 - XL: 1600px
 
 #### Images
+
 For images that need to be used, feel free to use any placeholder service:
+
 - https://placehold.co/
 - https://placedog.net/
 
 #### Icons
+
 The project is set up to use Font Awesome Free. For any icon usage, please use this.
 
 ### The Tech Stack
@@ -58,13 +80,14 @@ The project is set up to use Font Awesome Free. For any icon usage, please use t
 
 ### Requirements
 
-- The page should look as close to the design as possible. 
+- The page should look as close to the design as possible.
 - It must work across the latest versions of major browsers.
 - Mobile and desktop layouts should be handled.
 - Include at least minimal accessibility considerations (alt text, proper landmarks).
 - It must align to the specification of each component - Specifications can be found inside the `specifications` folder.
 
 ### Deliverables
+
 - A link to a repository (GitHub, GitLab, Bitbucket etc.) or zipped project folder
   - Please email [abhijeet.chadha@mandogroup.com]() with a link to the GitHub repository on completion and ensure the repo is public/accessible to us.
 
@@ -73,11 +96,13 @@ The project is set up to use Font Awesome Free. For any icon usage, please use t
 1. Fork and install the repository.
 2. Switch to Node `22.11.0`
 3. Install dependencies
-``` bash
+
+```bash
 npm install
 ```
 
 Run the StoryBook instance:
+
 ```bash
 npm run storybook
 ```
@@ -85,7 +110,9 @@ npm run storybook
 Open http://localhost:6006 in your browser.
 
 ## Story help
+
 To create a Storybook story for this project, please observe the following example below:
+
 ```typescript
 import type { Meta, StoryObj } from '@storybook/react'
 
@@ -121,21 +148,37 @@ export const Basic: Story = {
 ```
 
 ## Component Specification
+
 Below is a breakdown of what is required for each component
 
 ### Header
+
 [Specification](specifications/header-specification.md)
+
 ### Breadcrumb
+
 [Specification](specifications/breadcrumb-specification.md)
+
 ### Page Title
+
 [Specification](specifications/page-title-specification.md)
+
 ### Rich Text Block
+
 [Specification](specifications/rich-text-block-specification.md)
+
 ### Gallery
+
 [Specification](specifications/gallery-specification.md)
+
 ### Featured Content
+
 [Specification](specifications/related-content-specification.md)
+
 ### Related Content
+
 [Specification](specifications/related-content-specification.md)
+
 ### Footer
+
 [Specification](specifications/footer-specification.md)

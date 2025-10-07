@@ -1,6 +1,6 @@
 import { Meta, StoryObj } from '@storybook/react'
 import PageTitle, { PageTitleProps } from './PageTitle'
-import { imageData } from '../lib/data'
+import { imageData } from '../data/images'
 
 export const { h1, description, image }: PageTitleProps = {
   h1: 'Page Title',
