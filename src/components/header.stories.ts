@@ -1,17 +1,23 @@
 import { Meta, StoryObj } from '@storybook/react'
-import Header, { MenuItem } from './header'
+import Header, { MenuItem, SiteLogo } from './header'
 
 export const menuItems: MenuItem[] = [
   { label: 'About us', url: '/about-us' },
   { label: 'Contact us', url: '/contact-us' }
 ]
 
+export const siteLogo: SiteLogo = {
+  src: 'public/images/mandogroup_logo.svg',
+  alt: 'Mando Group logo',
+  url: undefined
+}
+
 const meta: Meta<typeof Header> = {
   title: 'Components/Header',
   component: Header,
   tags: ['autodocs'],
   args: {
-    siteHeader: 'Mando Group',
+    siteLogo: siteLogo,
     menuItems: menuItems
   }
 }

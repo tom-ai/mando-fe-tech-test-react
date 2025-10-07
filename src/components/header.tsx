@@ -1,16 +1,18 @@
 export type MenuItem = { label: string; url: string }
+export type SiteLogo = { src: string; alt: string; url: string | undefined }
 
 export type HeaderProps = {
-  siteHeader: string
+  siteLogo: SiteLogo
   menuItems: MenuItem[]
 }
 
-function Header({ siteHeader, menuItems }: HeaderProps) {
+function Header({ siteLogo, menuItems }: HeaderProps) {
   return (
     <header className="header">
       <nav>
-        <h1>{siteHeader}</h1>
-
+        <a href={siteLogo.url}>
+          <img alt={siteLogo.alt} src={siteLogo.src} />
+        </a>
         <ul>
           {menuItems.map((item) => (
             <li>
